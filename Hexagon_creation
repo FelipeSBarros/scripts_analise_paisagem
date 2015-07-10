@@ -15,14 +15,14 @@ shape <- readOGR(dsn=dsn, layer=shapefile_name) #change 'shapefile_name'
 #confirming the class of imported shape
 class(shape)
 #plotting the polygon
-plot(Br, axes=TRUE)
+plot(shape, axes=TRUE)
 
 #Creating the hexagon sampling, in point format, using spsample (package 'sp') to be converted in polygon
-Br_pts <- spsample(Br, n = 1000, "hexagonal")
-plot(Br_pts)
+shape_pts <- spsample(shape, n = 1000, "hexagonal")
+plot(shape_pts)
 #for more information:
 ?spsample
 
 #converting the hexagons created to polygons
-HexPols <- HexPoints2SpatialPolygons(Br_pts)
+HexPols <- HexPoints2SpatialPolygons(shape_pts)
 plot(HexPols)
