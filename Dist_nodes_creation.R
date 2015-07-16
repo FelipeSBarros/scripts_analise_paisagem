@@ -68,5 +68,4 @@ for( i in 1:length(shapes))
 #writting distance results in text files
   write.table(distancia[[i]],file=sprintf("%s.dists_oldgorwth", shapes[[i]]$HEXID[i]), sep="\t", quote=F)
 }, gcFirst = TRUE)
-i <- 1
 ############
