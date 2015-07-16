@@ -1,3 +1,7 @@
+################################################################
+##Script for creating distances and nodes data for one or several landscape shapefiles
+##Author: Felipe S Barros; Renato Crouzelles; Luis Ivan Ortiz
+###############################################################
 ######
 ##Script de preparação dos dados para uso no CONEFOR para um ou shapefiles de paisagem
 #####
